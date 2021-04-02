@@ -82,7 +82,7 @@ function saveData() {
 function loadExistingData() {
     $.ajax({
         type : "GET",
-        url : "https://cse120-2021-api.herokuapp.com/data",
+        url : "https://cse120-2021-api-ed.herokuapp.com/data",
         dataType : "json",
         success : function(data) {
         	console.log("success", data);
