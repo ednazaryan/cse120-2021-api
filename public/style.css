@@ -1,0 +1,114 @@
+body {
+
+ background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/554660/e49407d4966c2fdb9a737c9914957e5882b6b37b.jpg");
+ background-position: center; 
+ background-repeat: repeat;
+ background-color:black;
+ padding: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 1000px;
+
+}
+
+div.item {
+	
+  background-color: gainsboro;
+	width: 100%;
+	height: 30px;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+  overflow-y: hidden;  
+  cursor: pointer;
+}
+
+#pokerDataContainer div.item {
+  background-color: #DEDEDE;
+	width: 100%;
+	height: 30px;
+	float: left;
+	margin: 10px;
+  border-color: white; 
+	padding: 10px;
+	position: relative;
+  overflow-y: hidden;  
+  cursor: pointer;
+}
+
+#bookDataContainer div.item {
+	background-color: #DEDEDE;
+	width: 100%;
+	height: 30px;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+  overflow-y: hidden;  
+  cursor: pointer;
+}
+
+#otherDataContainer {
+  display: none;
+  
+}
+
+div.item button {
+  font-size: 10px;  
+  font-family: "Sofia", sans-serif;
+  border-radius: 10px 10px;
+  padding: 10px;
+  color: black;
+  background-color:white;  
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+div.item button:hover {
+  border: 1px solid white;
+  background-color: white;  
+}
+
+div.item button.editButton {
+	right: 70px;
+}
+
+span.item {
+	line-height: 16px;
+	font-size: 14px;
+}
+
+span.item b {
+	margin-right: 10px;
+}
+
+span.undefined {
+	color: red;
+}
+
+h1 {
+ text-align: center; 
+ color: #FAFAFA; 
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 50pt; 
+
+    }
+
+h2 {
+
+  text-align: center; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20pt; 
+  color:#ECECEC;
+  font-weight: bold;
+  display: inline-block; 
+
+ 
+}
+label {
+color: white
+}
