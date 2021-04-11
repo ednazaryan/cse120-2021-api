@@ -71,7 +71,7 @@ function updateData(e) {
 
   $.ajax({
     type: 'POST',
-    url: "https://cse120-2021-api-yervand.herokuapp.com/data/update",
+    url: "https://cse120-2021-api-ed.herokuapp.com/data/update",
     data: updatedPoker,
     cache: false,
     dataType: 'json',
