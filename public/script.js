@@ -51,6 +51,43 @@ function saveData() {
     });
 }
 
+function updateData(e) {
+  e.preventDefault();
+  var updatedPoker = {};
+  updatedPoker.id = document.getElementById("_id").value;
+  updatedPoker.name = document.getElementById("name").value;
+  updatedPoker.email = document.getElementById("email").value;
+  updatedPoker.unique = document.getElementById("unique").value;
+  updatedPoker.pset = document.getElementById("pset").value;
+  updatedPoker.fplayer = document.getElementById("fplayer").value;
+  updatedPoker.comb = document.getElementById("comb").value;
+  updatedPoker.money = document.getElementById("money").value;
+  updatedPoker.lplay = document.getElementById("lplay").value;
+  updatedPoker.holdem = document.getElementById("holdem").value;
+  updatedPoker.omaha = document.getElementById("omaha").value;
+  updatedPoker.chips = document.getElementById("chips").value;
+  updatedPoker.sblind = document.getElementById("sblind").value;
+  updatedPoker.bblind = document.getElementById("bblind").value;
+
+  $.ajax({
+    type: 'POST',
+    url: "https://cse120-2021-api-yervand.herokuapp.com/data/update",
+    data: updatedPoker,
+    cache: false,
+    dataType: 'json',
+    success: function (data) {
+      console.log("success");
+    },
+    error: function (xhr) {
+      console.error("Error in post", xhr);
+    },
+    complete: function () {
+      console.log("Complete");
+    }
+  });
+
+}
+
 function loadExistingData() {
   myPokerData = [];
   myBookData = [];
