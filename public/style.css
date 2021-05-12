@@ -1,53 +1,66 @@
 body {
 
- background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/554660/e49407d4966c2fdb9a737c9914957e5882b6b37b.jpg");
- background-position: center; 
- background-repeat: repeat;
- background-color:black;
- padding: 30px;
- margin-left: auto;
- margin-right: auto;
- width: 1000px;
+ background-image: url("file:///Users/edmon/Documents/Workspace/cse120-2021-api/public/aua.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+ 
+
 
 }
 
 div.item {
-	
-  background-color: gainsboro;
-	width: 100%;
-	height: 30px;
+	content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #FFFAFA;
 	float: left;
 	margin: 10px;
 	padding: 10px;
 	position: relative;
   overflow-y: hidden;  
   cursor: pointer;
+  border-radius: 10px;
+  background-image: 
+                    linear-gradient(175deg, rgba(0,0,0,0) 75%, #828282 85%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 59%, #878787 89%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 70%, #949494 80%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 56%, #a1a1a1 86%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 55%, #adadad 75%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 93%, #bababa 83%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 90%, #a8a8a8 70%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 90%, #a8a8a8 80%);
 }
+
+
 
 #pokerDataContainer div.item {
-  background-color: #DEDEDE;
-	width: 100%;
-	height: 30px;
-	float: left;
-	margin: 10px;
-  border-color: white; 
-	padding: 10px;
-	position: relative;
-  overflow-y: hidden;  
-  cursor: pointer;
+
+  color:#000;
+  display:inline-block;
+  padding:20px;
+  margin:20px;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transform: rotate(-6deg);
+  position:relative;
+  top:5px;
+
+
 }
 
-#bookDataContainer div.item {
-	background-color: #DEDEDE;
-	width: 100%;
-	height: 30px;
-	float: left;
-	margin: 10px;
-	padding: 10px;
-	position: relative;
-  overflow-y: hidden;  
-  cursor: pointer;
+#pokerDataContainer div.item:hover{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+  text-decoration:none;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition: transform .15s linear;
 }
+
 
 #otherDataContainer {
   display: none;
@@ -68,9 +81,12 @@ div.item button {
   border: 1px solid white;
 }
 
+
 div.item button:hover {
   border: 1px solid white;
-  background-color: white;  
+  background-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  
 }
 
 div.item button.editButton {
@@ -93,19 +109,13 @@ span.undefined {
 h1 {
  text-align: center; 
  color: #FAFAFA; 
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-size: 50pt; 
+  font-family: 'josefin sans';
+    font-weight: 700;
+        letter-spacing: .3em;
+    text-transform: uppercase;
+font-size: 56px;
 
     }
-
-h2 {
-
-  text-align: center; 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20pt; 
-  color:#ECECEC;
-  font-weight: bold;
-  display: inline-block; 
 
  
 }
