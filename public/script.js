@@ -220,7 +220,7 @@ loadedData.forEach(item => {
         if (item["project"] == "Hobby") {
           document.location  = "edit_hobby.html"; 
         } else {
-          document.location  = "edit_book.html"; 
+         
         }
     }
   })
@@ -247,10 +247,3 @@ function loadpokerItemForEdit() {
   
 }
 
-function loadBookItemForEdit() {
-  localStorage = window.localStorage;
-  editItem = JSON.parse(localStorage.getItem("editItem"));
-  console.log(editItem);
-  document.getElementById("_id").value = editItem["_id"];
-  document.getElementById("name").value = editItem["name"]; 
-}
